@@ -1,0 +1,52 @@
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.task-card {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid #4f46e5;
+  transition: all 0.3s ease;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.task-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: #f3f4f6;
+}
+
+.task-card.completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+  border-left-color: #10b981;
+  background-color: #f0fdf4;
+}
+
+.filter-section {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+}

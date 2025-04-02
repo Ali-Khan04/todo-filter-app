@@ -1,0 +1,40 @@
+.main-input {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 16px;
+  background-color: #fef3c7;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border: 1px solid #fcd34d;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(252, 211, 77, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(252, 211, 77, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(252, 211, 77, 0);
+  }
+}
+
+.delete-btn {
+  background-color: #ef4444;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+}
+
+.complete-btn {
+  background-color: #10b981;
+}
+
+.complete-btn:hover {
+  background-color: #059669;
+}
